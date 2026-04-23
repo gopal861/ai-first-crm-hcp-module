@@ -136,9 +136,7 @@ Text:
 
     updated_state = update_form_state(cleaned_data)
 
-    print("DEBUG extracted_data:", extracted_data)
-    print("DEBUG cleaned_data:", cleaned_data)
-    print("DEBUG current_state BEFORE:", current_state)
+   
 
     return {
         "message": f"✅ Interaction logged for {updated_state.get('hcp_name', 'HCP')}",
